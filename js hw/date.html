@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <script>
+        let date=new Date();
+        document.getElementById("d1").innerHTML=date;
+        document.getElementById("d2").innerHTML=date.getFullYear();
+        document.getElementById("d3").innerHTML=date.getHours();
+        document.getElementById("d4").innerHTML=date.getDate();
+        document.getElementById("d5").innerHTML=date.getMinutes();
+        document.getElementById("d6").innerHTML=date.getDay();
+        let today=date.getDay();
+        switch(today){
+            case 0:
+                document.write("Sunday");
+                break;
+            case 1:
+                document.write("MOnday");
+                break;
+            case 2:
+                document.write("Tuesday");
+                break;
+            case 3:
+                document.write("Wednesday");
+                break;
+            case 4:
+                document.write("Thursday");
+                break;
+            case 5:
+                document.write("Friday");
+                break;
+            case 6:
+                documet.write("Saturday");
+                break;
+        }
+        let month=date.getMonth();
+        document.write("<br>");
+        switch(month){
+            case 1:
+                document.write("January");
+                break;
+            case 2:
+                document.write("Febburary");
+                break;
+            case 3:
+                document.write("March");
+                break;
+            case 4:
+                document.write("April");
+                break;
+            case 5:
+                document.write("May");
+                break;
+            case 6:
+                document.write("June");
+                break;
+            case 7:
+                document.write("July");
+                break;
+            case 8:
+                document.write("August");
+                break;
+            case 9:
+                document.write("September");
+                break;
+            case 10:
+                document.write("October");
+                break;
+            case 11:
+                document.write("November");
+                break;
+            case 12:
+                document.write("December");
+                break;
+        }
+
+    </script>
+</body>
+</html>
